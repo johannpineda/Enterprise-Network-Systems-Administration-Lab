@@ -1,0 +1,13 @@
+Name,Type,Parent,Description
+Admin,OrganizationalUnit,"corp.example.test",Administrative identities
+Administrative Users,OrganizationalUnit,Admin,Privileged user accounts
+Service Accounts,OrganizationalUnit,Admin,Non-interactive service identities
+Users,OrganizationalUnit,"corp.example.test",Department users
+Finance,OrganizationalUnit,Users,Finance department
+Human Resources,OrganizationalUnit,Users,Human Resources department
+Information Technology,OrganizationalUnit,Users,Information Technology department
+Computers,OrganizationalUnit,"corp.example.test",Managed computers
+Workstations,OrganizationalUnit,Computers,Domain workstations
+Servers,OrganizationalUnit,Computers,Member servers
+Groups,OrganizationalUnit,"corp.example.test",Role-based security groups
+

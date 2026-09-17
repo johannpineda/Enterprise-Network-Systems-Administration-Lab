@@ -1,0 +1,16 @@
+{
+  "server": "DC01.corp.example.test",
+  "scope_name": "LAB-LAN",
+  "scope_id": "192.168.10.0",
+  "subnet_mask": "255.255.255.0",
+  "start_range": "192.168.10.100",
+  "end_range": "192.168.10.199",
+  "lease_duration_days": 8,
+  "state": "Active",
+  "options": {
+    "003_router": ["192.168.10.1"],
+    "006_dns_servers": ["192.168.10.10"],
+    "015_dns_domain": "corp.example.test"
+  }
+}
+

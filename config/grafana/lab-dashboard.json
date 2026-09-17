@@ -1,0 +1,20 @@
+{
+  "title": "Enterprise Lab Overview",
+  "uid": "enterprise-lab-overview",
+  "tags": ["lab", "infrastructure", "security"],
+  "timezone": "utc",
+  "refresh": "30s",
+  "time": {"from": "now-24h", "to": "now"},
+  "panels": [
+    {"id": 1, "title": "Host Status", "type": "stat", "targets": ["DC01", "WIN11-01", "WAZUH01"]},
+    {"id": 2, "title": "CPU Utilization", "type": "timeseries", "unit": "percent"},
+    {"id": 3, "title": "Memory Utilization", "type": "timeseries", "unit": "percent"},
+    {"id": 4, "title": "Disk Usage", "type": "gauge", "unit": "percent"},
+    {"id": 5, "title": "Network Traffic", "type": "timeseries", "unit": "bps"},
+    {"id": 6, "title": "Authentication Failures", "type": "timeseries", "event_id": 4625},
+    {"id": 7, "title": "Backup Status", "type": "table"}
+  ],
+  "schemaVersion": 39,
+  "version": 1
+}
+

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-17T16:30:00Z",
+  "environment": "Enterprise Network and Systems Administration Lab",
+  "summary": {"passed": 10, "failed": 0, "status": "healthy"},
+  "checks": [
+    {"name": "pfSense gateway reachable", "target": "192.168.10.1", "status": "PASS"},
+    {"name": "DC01 reachable", "target": "192.168.10.10", "status": "PASS"},
+    {"name": "WAZUH01 reachable", "target": "192.168.10.20", "status": "PASS"},
+    {"name": "Internal DNS resolution", "target": "corp.example.test", "status": "PASS"},
+    {"name": "AD DS service", "target": "DC01", "status": "PASS"},
+    {"name": "DNS service", "target": "DC01", "status": "PASS"},
+    {"name": "DHCP service", "target": "DC01", "status": "PASS"},
+    {"name": "WIN11-01 domain membership", "target": "corp.example.test", "status": "PASS"},
+    {"name": "Wazuh agent connectivity", "target": "3/3 active", "status": "PASS"},
+    {"name": "Latest backup", "target": "2026-09-17_010000", "status": "PASS"}
+  ]
+}
+

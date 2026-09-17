@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-09-17T16:30:00Z",
+  "computer": "DC01",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {"check": "Default gateway reachable", "status": "PASS", "details": "192.168.10.1"},
+    {"check": "Internal DNS resolution", "status": "PASS", "details": "corp.example.test via 192.168.10.10"},
+    {"check": "Domain membership", "status": "PASS", "details": "corp.example.test"},
+    {"check": "Host reachable: DC01", "status": "PASS"},
+    {"check": "Host reachable: WIN11-01", "status": "PASS"},
+    {"check": "Host reachable: WAZUH01", "status": "PASS"},
+    {"check": "DNS service running", "status": "PASS"},
+    {"check": "DHCP service running", "status": "PASS"}
+  ]
+}
+

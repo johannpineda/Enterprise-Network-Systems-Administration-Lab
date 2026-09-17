@@ -1,0 +1,9 @@
+OK       computer-info.txt
+OK       network-config.txt
+OK       dhcp.xml
+OK       dns/corp.example.test.dns
+OK       gpo/manifest.xml
+OK       pfsense/config-sanitized.xml
+OK       documentation/README.md
+Verified 7 files; failures: 0.
+

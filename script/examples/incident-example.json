@@ -1,0 +1,22 @@
+{
+  "incident_id": "INC-2026-004",
+  "title": "Simulated repeated authentication failures",
+  "severity": "Medium",
+  "status": "Closed",
+  "detected_at": "2026-09-17 14:22 UTC",
+  "closed_at": "2026-09-17 16:10 UTC",
+  "affected_asset": "WIN11-01",
+  "summary": "Monitoring identified repeated failed sign-ins against an approved lab account. The activity was contained, validated as a controlled exercise, and closed without unauthorized access.",
+  "timeline": [
+    {"time": "14:22", "phase": "Detection", "action": "Wazuh alert triggered."},
+    {"time": "14:35", "phase": "Triage", "action": "Correlated Windows security events and source host."},
+    {"time": "14:50", "phase": "Containment", "action": "Locked the test account and isolated the source client."},
+    {"time": "15:30", "phase": "Recovery", "action": "Confirmed normal authentication and restored the client."},
+    {"time": "16:10", "phase": "Review", "action": "Closed the exercise and documented lessons learned."}
+  ],
+  "evidence": ["Windows Event ID 4625 records", "Wazuh alert export", "Source workstation logs"],
+  "root_cause": "Approved authentication-failure simulation using a dedicated lab account.",
+  "containment_and_recovery": ["Disabled the test account", "Isolated WIN11-01", "Validated normal service operation"],
+  "preventive_actions": ["Confirmed account-lockout policy", "Validated alert thresholds", "Updated response documentation"],
+  "lessons_learned": "Centralized event collection shortened the time required to correlate the account and source workstation."
+}

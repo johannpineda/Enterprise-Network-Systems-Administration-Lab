@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset="1" stop-color="#10233b"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity=".3"/></filter>
+    <style>
+      .title{font:700 44px Arial;fill:#f8fafc}.sub{font:20px Arial;fill:#94a3b8}.h{font:700 25px Arial;fill:#f8fafc}.p{font:18px Arial;fill:#cbd5e1}.small{font:16px Arial;fill:#93c5fd}.box{fill:#13253d;stroke:#3b82f6;stroke-width:2;rx:18;filter:url(#shadow)}.line{stroke:#38bdf8;stroke-width:5;fill:none}.dash{stroke:#64748b;stroke-width:3;stroke-dasharray:12 10}.tag{fill:#0f766e;rx:12}.tagtext{font:700 15px Arial;fill:white}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="800" y="62" text-anchor="middle" class="title">Enterprise Network &amp; Systems Administration Lab</text>
+  <text x="800" y="98" text-anchor="middle" class="sub">Logical architecture • 192.168.10.0/24 • corp.example.test</text>
+
+  <rect x="620" y="135" width="360" height="95" class="box"/><text x="800" y="177" text-anchor="middle" class="h">Internet / Upstream NAT</text><text x="800" y="205" text-anchor="middle" class="p">WAN connectivity</text>
+  <path d="M800 230 L800 285" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="590" y="290" width="420" height="150" class="box"/><text x="800" y="335" text-anchor="middle" class="h">pfSense Firewall</text><text x="630" y="375" class="p">WAN: DHCP</text><text x="630" y="405" class="p">LAN: 192.168.10.1/24</text><text x="845" y="375" class="p">NAT • Routing</text><text x="845" y="405" class="p">Firewall policy</text>
+  <rect x="905" y="307" width="82" height="28" class="tag"/><text x="946" y="327" text-anchor="middle" class="tagtext">EDGE</text>
+  <path d="M800 440 L800 510" class="line" marker-end="url(#arrow)"/>
+  <text x="825" y="485" class="small">LAB-LAN</text>
+  <path d="M230 530 L1370 530" class="line"/>
+
+  <path d="M330 530 L330 585" class="line" marker-end="url(#arrow)"/><path d="M800 530 L800 585" class="line" marker-end="url(#arrow)"/><path d="M1270 530 L1270 585" class="line" marker-end="url(#arrow)"/>
+  <rect x="135" y="590" width="390" height="210" class="box"/><text x="330" y="635" text-anchor="middle" class="h">DC01</text><text x="330" y="668" text-anchor="middle" class="small">192.168.10.10</text><text x="175" y="710" class="p">Windows Server 2022</text><text x="175" y="742" class="p">AD DS • DNS • DHCP</text><text x="175" y="774" class="p">Group Policy • Backups</text>
+  <rect x="605" y="590" width="390" height="210" class="box"/><text x="800" y="635" text-anchor="middle" class="h">WIN11-01</text><text x="800" y="668" text-anchor="middle" class="small">DHCP: 192.168.10.100</text><text x="645" y="710" class="p">Windows 11 Pro</text><text x="645" y="742" class="p">Domain workstation</text><text x="645" y="774" class="p">Wazuh agent • GPO managed</text>
+  <rect x="1075" y="590" width="390" height="210" class="box"/><text x="1270" y="635" text-anchor="middle" class="h">WAZUH01</text><text x="1270" y="668" text-anchor="middle" class="small">192.168.10.20</text><text x="1115" y="710" class="p">Ubuntu Server</text><text x="1115" y="742" class="p">Wazuh manager</text><text x="1115" y="774" class="p">Grafana dashboards</text>
+
+  <path d="M525 690 C600 650 600 650 605 690" class="dash"/><path d="M995 690 C1070 650 1070 650 1075 690" class="dash"/>
+  <text x="800" y="850" text-anchor="middle" class="sub">Centralized identity • Controlled access • Monitoring • Automated recovery</text>
+</svg>
+

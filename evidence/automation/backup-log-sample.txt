@@ -1,0 +1,9 @@
+2026-09-17T01:00:00 [INFO] Backup started: D:\LabBackups\2026-09-17_010000
+2026-09-17T01:00:23 [SUCCESS] DHCP configuration exported.
+2026-09-17T01:00:31 [SUCCESS] DNS zones exported.
+2026-09-17T01:00:45 [SUCCESS] Group Policy Objects exported.
+2026-09-17T01:01:02 [SUCCESS] pfSense configuration archived.
+2026-09-17T01:01:15 [SUCCESS] SHA-256 manifest created.
+2026-09-17T01:01:28 [SUCCESS] Restore test passed.
+2026-09-17T01:01:37 [SUCCESS] Backup completed successfully.
+
