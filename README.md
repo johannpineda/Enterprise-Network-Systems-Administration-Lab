@@ -398,8 +398,6 @@ The final incident report should include an executive summary, timeline, evidenc
 
 The project evidence set documents the following implemented capabilities:
 
-> **Portfolio note:** The dashboard images below are simulated evidence mockups created to present the lab consistently. Replace them with direct screenshots from the live environment when publishing configuration-specific proof.
-
 | Evidence | Purpose |
 |---|---|
 | pfSense interface configuration | Demonstrate WAN/LAN separation and routing |
